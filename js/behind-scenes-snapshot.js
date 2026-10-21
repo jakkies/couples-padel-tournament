@@ -1,0 +1,30 @@
+export default {
+  sourceAccounts: [],
+  generatedAt: "2026-08-13T00:00:00.000Z",
+  posts: [
+    {
+      category: "Series announcement",
+      caption: "The PlayPadel Challenger Series is coming — a new stage for ambitious players.",
+      time: "Coming soon",
+      url: "#top",
+      image: "assets/images/challenger-news-launch.svg",
+      alt: "PlayPadel Challenger Series launch graphic."
+    },
+    {
+      category: "Competition format",
+      caption: "Round-robin opportunities meet the pressure of a knock-out draw.",
+      time: "Format preview",
+      url: "#how-the-league-works",
+      image: "assets/images/challenger-news-format.svg",
+      alt: "Challenger Series round-robin and knock-out format graphic."
+    },
+    {
+      category: "Powered by Padeuce",
+      caption: "Live courts, fixtures and standings will keep every challenger connected.",
+      time: "Match centre",
+      url: "#live",
+      image: "assets/images/challenger-news-live.svg",
+      alt: "Live scoring and match centre graphic."
+    }
+  ]
+};

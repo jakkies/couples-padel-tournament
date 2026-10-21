@@ -1,0 +1,12 @@
+:root{
+  --colour-electric-green:#ed088d;--colour-secondary-blue:#2993d1;--colour-faded-green:#65103f;--colour-off-white:#f6f8ff;
+  --colour-silver-grey:#75829a;--colour-midnight-green:#10192a;--colour-bg:#081121;
+  --colour-bg-alt:#0c172a;--colour-surface:#111f34;--colour-surface-hover:#182a45;
+  --colour-border:rgba(255,255,255,.13);--colour-text:#f6f8ff;--colour-text-muted:#9ca9bd;
+  --colour-success:#ed088d;--colour-error:#ef4444;--colour-warning:var(--colour-secondary-blue);
+  --font-heading:"Montserrat",system-ui,sans-serif;--font-body:"Inter",system-ui,sans-serif;
+  --display:clamp(2.75rem,7vw,5.5rem);--h1:clamp(2.25rem,5vw,4rem);--h2:clamp(1.75rem,4vw,3rem);
+  --h3:clamp(1.25rem,2vw,1.75rem);--score:clamp(2.5rem,7vw,5rem);
+  --radius-sm:.5rem;--radius-md:1rem;--radius-lg:1.5rem;--container:80rem;
+  --shadow:0 22px 55px rgba(0,0,0,.3)
+}

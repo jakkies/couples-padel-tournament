@@ -1,0 +1,76 @@
+{
+  "source": "https://premierpadel.com/en/tournaments-detail/pretoria-p1",
+  "generatedAt": "2026-08-02T16:46:55.023Z",
+  "date": "2026-08-02",
+  "day": 8,
+  "fixtures": [
+    {
+      "id": "18295",
+      "time": "Not before 15:00",
+      "court": "Court 1",
+      "division": "Men",
+      "round": "Final",
+      "a": "Javier Leal / Francisco Guerrero",
+      "b": "Alejandro Galan / Federico Chingotto",
+      "aPlayers": [
+        {
+          "name": "Javier Leal",
+          "country": "ESP"
+        },
+        {
+          "name": "Francisco Guerrero",
+          "country": "ESP"
+        }
+      ],
+      "bPlayers": [
+        {
+          "name": "Alejandro Galan",
+          "country": "ESP"
+        },
+        {
+          "name": "Federico Chingotto",
+          "country": "ARG"
+        }
+      ],
+      "status": "Completed",
+      "scoreA": "2  7  6⁷",
+      "scoreB": "6  5  7",
+      "winner": "b",
+      "duration": "2h 02m"
+    },
+    {
+      "id": "18294",
+      "time": "Starting at 13:00",
+      "court": "Court 1",
+      "division": "Women",
+      "round": "Final",
+      "a": "Gemma Triay Pons / Delfina Brea Senesi",
+      "b": "Claudia Fernandez Sanchez / Martina Calvo",
+      "aPlayers": [
+        {
+          "name": "Gemma Triay Pons",
+          "country": "ESP"
+        },
+        {
+          "name": "Delfina Brea Senesi",
+          "country": "ARG"
+        }
+      ],
+      "bPlayers": [
+        {
+          "name": "Claudia Fernandez Sanchez",
+          "country": "ESP"
+        },
+        {
+          "name": "Martina Calvo",
+          "country": "ESP"
+        }
+      ],
+      "status": "Completed",
+      "scoreA": "6  6⁵  7",
+      "scoreB": "2  7  6⁴",
+      "winner": "a",
+      "duration": "2h 53m"
+    }
+  ]
+}

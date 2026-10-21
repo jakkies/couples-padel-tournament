@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" role="img" aria-labelledby="title desc">
+  <title id="title">PlayPadel Challenger Series</title>
+  <desc id="desc">A lime and blue padel ball mark beside the PlayPadel Challenger Series wordmark.</desc>
+  <defs>
+    <linearGradient id="ball" x1="40" y1="220" x2="230" y2="35" gradientUnits="userSpaceOnUse"><stop stop-color="#ed088d"/><stop offset="1" stop-color="#ff69b4"/></linearGradient>
+    <linearGradient id="slash" x1="193" y1="217" x2="275" y2="82" gradientUnits="userSpaceOnUse"><stop stop-color="#35b9ff"/><stop offset="1" stop-color="#77eaff"/></linearGradient>
+  </defs>
+  <g transform="translate(10 10)"><circle cx="120" cy="120" r="96" fill="url(#ball)"/><path d="M48 166c52-15 94-56 111-110M79 210c57-24 105-73 126-132" fill="none" stroke="#081121" stroke-width="14" stroke-linecap="round" opacity=".9"/><path d="m190 210 56-100 34 20-57 100z" fill="url(#slash)"/></g>
+  <text x="310" y="104" fill="#f6f8ff" font-family="Montserrat,Arial,sans-serif" font-size="68" font-weight="900" letter-spacing="-3">PLAYPADEL</text>
+  <text x="313" y="164" fill="#ed088d" font-family="Montserrat,Arial,sans-serif" font-size="42" font-weight="900" letter-spacing="3">CHALLENGER</text>
+  <text x="316" y="211" fill="#77eaff" font-family="Montserrat,Arial,sans-serif" font-size="29" font-weight="800" letter-spacing="13">SERIES</text>
+</svg>

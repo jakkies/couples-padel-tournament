@@ -1,0 +1,10 @@
+{
+  "name": "Cape Town Tennis League",
+  "short_name": "CT Tennis League",
+  "description": "Fixtures, results and live standings for the 2026 Cape Town Tennis League.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#292b33",
+  "theme_color": "#292b33",
+  "icons": [{"src":"favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

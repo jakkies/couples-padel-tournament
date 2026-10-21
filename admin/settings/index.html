@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feed Settings | PlayPadel Challenger Series Admin</title>
+  <meta name="description" content="Configure browser-local court, schedule and standings feeds for PlayPadel Challenger Series.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#081121">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@700;800;900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/variables.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../admin.css?v=4">
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body class="admin-page settings-page">
+  <a class="skip-link" href="#feed-settings">Skip to feed settings</a>
+  <header class="admin-header">
+    <div class="container admin-header__inner">
+      <a class="admin-brand" href="../index.html" aria-label="Tournament dashboard">
+        <img class="admin-brand__padeuce" src="../../assets/images/padeuce-brandmark.svg" width="285" height="83" alt="Padeuce">
+        <span aria-hidden="true"></span>
+        <img class="admin-brand__event" src="../../assets/images/Play-Padel-Hermanus-Logo.webp" width="344" height="193" alt="Play Padel Hermanus">
+      </a>
+      <div class="admin-header__actions">
+        <a class="button button--ghost button--small" href="../index.html">Dashboard</a>
+        <a class="button button--primary button--small" href="../../index.html">Public page</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="settings-main" id="feed-settings">
+    <div class="admin-backdrop" aria-hidden="true"></div>
+    <div class="container settings-layout">
+      <section class="settings-card" aria-labelledby="settings-title">
+        <div class="settings-heading">
+          <p class="eyebrow">Tournament administration</p>
+          <h1 id="settings-title">Feed settings</h1>
+          <p>Paste the Padeuce URLs used by the live courts, tournament schedule and standings.</p>
+        </div>
+
+        <div class="settings-notice">
+          <strong>Browser-local configuration</strong>
+          <p>These settings apply to every PlayPadel Challenger Series page opened in this browser. Replace the placeholder defaults with the confirmed Padeuce URLs before launch.</p>
+        </div>
+
+        <form class="settings-form" data-feed-settings-form novalidate>
+          <div class="settings-fields">
+            <label class="settings-field" for="court-1-url">
+              <span>Court 1 URL</span>
+              <input id="court-1-url" name="court1Url" type="url" inputmode="url" autocomplete="url" spellcheck="false" required aria-describedby="court-1-help court-1-error">
+              <small id="court-1-help">Example: https://padeuce.com/club/club-id/1</small>
+              <em id="court-1-error" data-error-for="court1Url"></em>
+            </label>
+
+            <label class="settings-field" for="court-2-url">
+              <span>Court 2 URL</span>
+              <input id="court-2-url" name="court2Url" type="url" inputmode="url" autocomplete="url" spellcheck="false" required aria-describedby="court-2-help court-2-error">
+              <small id="court-2-help">Both court feeds must belong to the same club.</small>
+              <em id="court-2-error" data-error-for="court2Url"></em>
+            </label>
+
+            <label class="settings-field" for="court-3-url">
+              <span>Court 3 URL</span>
+              <input id="court-3-url" name="court3Url" type="url" inputmode="url" autocomplete="url" spellcheck="false" required aria-describedby="court-3-help court-3-error">
+              <small id="court-3-help">Use the Court 3 feed from the same Padeuce club.</small>
+              <em id="court-3-error" data-error-for="court3Url"></em>
+            </label>
+
+            <label class="settings-field" for="court-4-url">
+              <span>Court 4 URL</span>
+              <input id="court-4-url" name="court4Url" type="url" inputmode="url" autocomplete="url" spellcheck="false" required aria-describedby="court-4-help court-4-error">
+              <small id="court-4-help">Use the Court 4 feed from the same Padeuce club.</small>
+              <em id="court-4-error" data-error-for="court4Url"></em>
+            </label>
+
+            <label class="settings-field" for="schedule-url">
+              <span>Schedule URL</span>
+              <input id="schedule-url" name="scheduleUrl" type="url" inputmode="url" autocomplete="url" spellcheck="false" required aria-describedby="schedule-help schedule-error">
+              <small id="schedule-help">Use the tournament results page that supplies fixtures.</small>
+              <em id="schedule-error" data-error-for="scheduleUrl"></em>
+            </label>
+
+            <label class="settings-field" for="standings-url">
+              <span>Standings URL</span>
+              <input id="standings-url" name="standingsUrl" type="url" inputmode="url" autocomplete="url" spellcheck="false" required aria-describedby="standings-help standings-error">
+              <small id="standings-help">This may be the same tournament URL as the schedule.</small>
+              <em id="standings-error" data-error-for="standingsUrl"></em>
+            </label>
+          </div>
+
+          <div class="settings-actions">
+            <button class="button button--primary" type="submit">Save feed settings</button>
+            <button class="button button--ghost" type="button" data-reset-feed-settings>Restore defaults</button>
+            <p class="settings-status" data-settings-status role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
+
+      <aside class="settings-connections" aria-labelledby="connections-title">
+        <div class="settings-connections__heading">
+          <p class="eyebrow">Connected pages</p>
+          <h2 id="connections-title">Current feed map</h2>
+        </div>
+        <div class="settings-connection-list">
+          <a class="settings-connection" data-connection="court1Url" data-feed-url="court1Url" href="#" target="_blank" rel="noopener noreferrer"><span>Court 1</span><strong data-connection-detail="court1Url">Checking…</strong><i>Open URL ↗</i></a>
+          <a class="settings-connection" data-connection="court2Url" data-feed-url="court2Url" href="#" target="_blank" rel="noopener noreferrer"><span>Court 2</span><strong data-connection-detail="court2Url">Checking…</strong><i>Open URL ↗</i></a>
+          <a class="settings-connection" data-connection="court3Url" data-feed-url="court3Url" href="#" target="_blank" rel="noopener noreferrer"><span>Court 3</span><strong data-connection-detail="court3Url">Checking…</strong><i>Open URL ↗</i></a>
+          <a class="settings-connection" data-connection="court4Url" data-feed-url="court4Url" href="#" target="_blank" rel="noopener noreferrer"><span>Court 4</span><strong data-connection-detail="court4Url">Checking…</strong><i>Open URL ↗</i></a>
+          <a class="settings-connection" data-connection="scheduleUrl" data-feed-url="scheduleUrl" href="#" target="_blank" rel="noopener noreferrer"><span>Schedule</span><strong data-connection-detail="scheduleUrl">Checking…</strong><i>Open URL ↗</i></a>
+          <a class="settings-connection" data-connection="standingsUrl" data-feed-url="standingsUrl" href="#" target="_blank" rel="noopener noreferrer"><span>Standings</span><strong data-connection-detail="standingsUrl">Checking…</strong><i>Open URL ↗</i></a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="../../js/feed-config.js?v=2"></script>
+  <script src="settings.js"></script>
+</body>
+</html>
