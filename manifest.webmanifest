@@ -1,10 +1,10 @@
 {
-  "name": "Cape Town Tennis League",
-  "short_name": "CT Tennis League",
-  "description": "Fixtures, results and live standings for the 2026 Cape Town Tennis League.",
+  "name": "Laeveld Agrochem Couples Padel Tournament",
+  "short_name": "Couples Padel",
+  "description": "Fixtures, results and live scores for the Laeveld Agrochem Couples Padel Tournament, 14 November 2026 at Ruimsig Country Club.",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#292b33",
-  "theme_color": "#292b33",
+  "background_color": "#fbf8f0",
+  "theme_color": "#13301f",
   "icons": [{"src":"favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
 }
