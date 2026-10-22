@@ -109,3 +109,4 @@ html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--pape
 .match-empty h3{margin:20px 0 0;color:var(--forest);font:700 clamp(24px,3vw,32px)/1.15 "Playfair Display",Georgia,serif}
 .match-empty p{max-width:460px;margin:10px 0 0;color:var(--muted)}
 .match-empty--standings{align-content:center;border-color:rgba(255,255,255,.14)}
+.hero__veil{display:none}
