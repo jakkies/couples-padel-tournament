@@ -139,3 +139,54 @@ html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--pape
 @media(max-width:760px){.league-info .timeline{grid-template-columns:1fr}}
 .prize-card__place--confirmed{border-style:solid;border-color:var(--gold);color:#fff;background:var(--gold);font-family:"Playfair Display",Georgia,serif;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
 .timeline p.timeline__prize{margin-top:14px;padding:10px 14px;border-radius:10px;color:var(--forest);background:#eef0d2;font:600 14px/1.4 "Playfair Display",Georgia,serif}
+/* Claim your spot */
+.couples__claim{flex:0 0 auto;text-transform:uppercase;letter-spacing:.1em;font-size:14px}
+.couples__claim:disabled{cursor:not-allowed;opacity:.55;transform:none}
+.couples .section-heading>div>p:last-child strong{display:block;margin-top:6px;color:var(--forest);font-weight:700}
+.couples-list li.is-open{border-left-color:#d6cdb3;background:#faf7ee;box-shadow:none;border-style:dashed;border-left-style:solid}
+.couples-list li.is-open b{color:#a9a68c;font-weight:500;font-style:italic}
+.couples-list li.is-new{animation:claimPulse 2.4s ease-out 1}
+@keyframes claimPulse{0%{box-shadow:0 0 0 0 rgba(154,132,52,.55)}100%{box-shadow:0 0 0 18px rgba(154,132,52,0)}}
+.claim-dialog{width:min(560px,calc(100% - 32px));max-height:calc(100dvh - 32px);padding:34px 34px 30px;border:0;border-radius:22px;color:var(--forest);background:var(--cream);box-shadow:0 30px 80px rgba(0,0,0,.35);overflow:auto}
+.claim-dialog::backdrop{background:rgba(12,32,21,.62);backdrop-filter:blur(3px)}
+.claim-dialog__close{position:absolute;top:14px;right:14px;width:40px;height:40px;border:0;border-radius:50%;color:var(--forest);background:#ece6d3;font-size:24px;line-height:1}
+.claim-dialog.is-spinning .claim-dialog__close{visibility:hidden}
+.claim-dialog h2{margin:0;font:800 clamp(30px,6vw,40px)/1 "Playfair Display",Georgia,serif}
+.claim-dialog h2 em{font:400 1.2em/0 var(--script);color:var(--gold)}
+.claim-demo{margin:14px 0 0;padding:10px 14px;border-radius:10px;color:#845b00;background:#fff6d9;font-size:13px;font-weight:600}
+.claim-steps{margin:20px 0 22px;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:6px;counter-reset:step}
+.claim-steps li{padding-top:10px;border-top:3px solid #e4dcc6;color:#a9a68c;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;counter-increment:step}
+.claim-steps li:before{content:counter(step) ". "}
+.claim-steps li.is-current{border-top-color:var(--gold);color:var(--forest)}
+.claim-steps li.is-complete{border-top-color:var(--laeveld);color:var(--laeveld)}
+.claim-form{display:grid;gap:14px}
+.claim-form__pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.claim-form label{display:grid;gap:6px}
+.claim-form label>span{color:var(--muted);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.claim-form input{height:48px;padding:0 14px;border:1px solid #d6cdb3;border-radius:12px;color:var(--forest);background:#fff;font:500 16px/1 Roboto,Arial,sans-serif}
+.claim-form input:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:var(--gold)}
+.claim-form input[aria-invalid=true]{border-color:#a9342f;background:#fff7f6}
+.claim-form__trap{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+.claim-form .button{justify-self:stretch}
+.claim-note{margin:0;color:var(--muted);font-size:13px}
+.claim-error{margin:0;padding:10px 14px;border-radius:10px;color:#a9342f;background:#fbe9e7;font-size:14px;font-weight:600}
+.claim-spin{display:grid;justify-items:center;gap:16px;text-align:center}
+.claim-spin__names{margin:0;color:var(--muted)}
+.claim-spin__names b{color:var(--forest);font-family:"Playfair Display",Georgia,serif;font-size:18px}
+.wheel{position:relative;width:min(320px,78vw);aspect-ratio:1}
+.wheel__svg{width:100%;height:100%;display:block;filter:drop-shadow(0 14px 26px rgba(19,48,31,.25))}
+.wheel__label{fill:#fff;font:700 13px/1 "Playfair Display",Georgia,serif;text-anchor:middle;dominant-baseline:central}
+.wheel__label.is-taken{fill:#a9a68c;text-decoration:line-through}
+.wheel__pointer{position:absolute;top:-8px;left:50%;width:0;height:0;border-left:15px solid transparent;border-right:15px solid transparent;border-top:28px solid var(--gold);transform:translateX(-50%);filter:drop-shadow(0 3px 3px rgba(0,0,0,.25))}
+.wheel__hub{position:absolute;top:50%;left:50%;width:15%;height:auto;padding:5%;box-sizing:content-box;border-radius:50%;background:var(--forest);transform:translate(-50%,-50%)}
+.claim-spin__actions{width:100%;display:grid;grid-template-columns:auto 1fr;gap:10px}
+.claim-done{text-align:center}
+.claim-done__label{margin:0;color:var(--gold);font:700 12px/1 "Playfair Display",Georgia,serif;text-transform:uppercase;letter-spacing:.2em}
+.claim-done__number{margin:8px 0 4px;color:var(--gold);font:800 88px/1 "Playfair Display",Georgia,serif}
+.claim-done h3{margin:0;font:700 24px/1.2 "Playfair Display",Georgia,serif}
+.claim-done p{margin:10px 0 22px;color:var(--muted)}
+.claim-done .button{width:100%}
+@media(max-width:560px){.claim-dialog{padding:28px 20px 22px}.claim-form__pair,.claim-spin__actions{grid-template-columns:1fr}.couples__claim{width:100%}}
+.wheel__label.is-marked{text-decoration:underline}
+.wheel__label.is-taken.is-marked{text-decoration:underline line-through}
+.claim-dialog>.eyebrow{padding-right:44px}

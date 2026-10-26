@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Playfair+Display:wght@500;600;700;800&amp;family=Roboto:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="assets/images/laeveld-padel-hero.jpg">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/tennis-league.css?v=21">
+  <link rel="stylesheet" href="css/tennis-league.css?v=23">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -67,8 +67,8 @@
     </section>
     <section class="section couples" id="couples" aria-labelledby="couples-title">
       <div class="container">
-        <div class="section-heading"><div><p class="eyebrow"><span></span> On court at Ruimsig</p><h2 id="couples-title">Couples <em>competing</em></h2><p>Meet the pairs taking to the court on 14 November 2026.</p></div><b class="couples__count">12 couples</b></div>
-        <ol class="couples-list"><li><span>01</span><b>Carl <em>&amp;</em> Mariska</b></li><li><span>02</span><b>Leandri <em>&amp;</em> Attie</b></li><li><span>03</span><b>Dirk <em>&amp;</em> Yolandie</b></li><li><span>04</span><b>Heinrich <em>&amp;</em> Almari</b></li><li><span>05</span><b>Janneman <em>&amp;</em> Ruandi</b></li><li><span>06</span><b>Jan-Hendrik <em>&amp;</em> Christel</b></li><li><span>07</span><b>Brian <em>&amp;</em> Bianca</b></li><li><span>08</span><b>Tyrone <em>&amp;</em> Nikita</b></li><li><span>09</span><b>Vincent <em>&amp;</em> Lindsey</b></li><li><span>10</span><b>Rob <em>&amp;</em> Simoné</b></li><li><span>11</span><b>Eddie <em>&amp;</em> Maureen</b></li><li><span>12</span><b>Ben <em>&amp;</em> Celine</b></li></ol>
+        <div class="section-heading"><div><p class="eyebrow"><span></span> On court at Ruimsig</p><h2 id="couples-title">Couples <em>competing</em></h2><p>16 spots, one per couple. Claim yours and spin the wheel to get your team number. <strong data-spots-left>16 of 16 spots still open.</strong></p></div><button class="button button--primary couples__claim" type="button" data-claim-open aria-haspopup="dialog">Claim your spot</button></div>
+        <ol class="couples-list" data-couples-list aria-live="polite"><li class="is-open"><span>01</span><b>Spot available</b></li><li class="is-open"><span>02</span><b>Spot available</b></li><li class="is-open"><span>03</span><b>Spot available</b></li><li class="is-open"><span>04</span><b>Spot available</b></li><li class="is-open"><span>05</span><b>Spot available</b></li><li class="is-open"><span>06</span><b>Spot available</b></li><li class="is-open"><span>07</span><b>Spot available</b></li><li class="is-open"><span>08</span><b>Spot available</b></li><li class="is-open"><span>09</span><b>Spot available</b></li><li class="is-open"><span>10</span><b>Spot available</b></li><li class="is-open"><span>11</span><b>Spot available</b></li><li class="is-open"><span>12</span><b>Spot available</b></li><li class="is-open"><span>13</span><b>Spot available</b></li><li class="is-open"><span>14</span><b>Spot available</b></li><li class="is-open"><span>15</span><b>Spot available</b></li><li class="is-open"><span>16</span><b>Spot available</b></li></ol>
       </div>
     </section>
     <section class="section prizes" id="prizes" aria-labelledby="prizes-title">
@@ -163,6 +163,44 @@
     <div class="container site-footer__top"><div class="footer-brand"><img src="assets/images/laeveld-agrochem-tarlton-logo.jpg" width="236" height="262" alt="Laeveld Agrochem Tarlton"><p>The Couples Padel Tournament, hosted by Laeveld Agrochem Tarlton. Sedert 1991.</p></div><div><b>Tournament hub</b><a href="#fixtures">Fixtures &amp; Results</a><a href="#standings">Standings</a><a href="#league-info">Event info</a><a href="#live-scores">Live Scores</a></div><div><b>The day</b><span>14 November 2026</span><span>Ruimsig Country Club</span><span>Dress code: tennis players</span></div></div>
     <div class="site-footer__bottom"><div class="container"><span>Laeveld Agrochem Couples Padel Tournament · 2026</span><span>Digital match centre powered by <img src="assets/images/padeuce-brandmark-white-text.svg" width="285" height="83" alt="Padeuce"></span></div></div>
   </footer>
+  <dialog class="claim-dialog" data-claim-dialog aria-labelledby="claim-title">
+    <button class="claim-dialog__close" type="button" data-claim-close aria-label="Close">&times;</button>
+    <p class="eyebrow"><span></span> Couples Padel Tournament</p>
+    <h2 id="claim-title">Claim your <em>spot</em></h2>
+    <p class="claim-demo" data-claim-demo hidden>Demo mode: claims are only saved in this browser and no emails are sent.</p>
+    <ol class="claim-steps" aria-hidden="true"><li data-step-indicator="details">Your details</li><li data-step-indicator="spin">Spin</li><li data-step-indicator="done">Confirmed</li></ol>
+    <form class="claim-form" data-claim-form novalidate>
+      <div class="claim-form__pair">
+        <label><span>Player 1</span><input name="player1" type="text" autocomplete="off" autocapitalize="words" maxlength="40" placeholder="First name" required></label>
+        <label><span>Player 2</span><input name="player2" type="text" autocomplete="off" autocapitalize="words" maxlength="40" placeholder="First name" required></label>
+      </div>
+      <label><span>Representative email</span><input name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required></label>
+      <label><span>Representative cell number</span><input name="cell" type="tel" autocomplete="tel" inputmode="tel" placeholder="082 123 4567" required></label>
+      <label class="claim-form__trap" aria-hidden="true">Website<input name="website" type="text" tabindex="-1" autocomplete="off"></label>
+      <p class="claim-note">One spot per couple. Your number is picked at random from the spots still open, and a confirmation is emailed to you and the organiser.</p>
+      <p class="claim-error" data-claim-error role="alert" hidden></p>
+      <button class="button button--primary" type="submit">Next: spin the wheel <span aria-hidden="true">&rarr;</span></button>
+    </form>
+    <div class="claim-spin" data-claim-spin-step hidden>
+      <p class="claim-spin__names">Spinning for <b data-claim-spin-names></b></p>
+      <div class="wheel">
+        <svg class="wheel__svg" viewBox="-104 -104 208 208" role="img" aria-label="Number wheel from 1 to 16. Grey numbers are already taken."><circle r="103" fill="#fbf8f0" stroke="#9a8434" stroke-width="2"/><g data-wheel-rotor></g><circle r="20" fill="#fbf8f0" stroke="#9a8434" stroke-width="2"/></svg>
+        <span class="wheel__pointer" aria-hidden="true"></span>
+        <img class="wheel__hub" src="assets/images/padel-rackets-icon.png" width="377" height="302" alt="">
+      </div>
+      <p class="claim-error" data-claim-spin-error role="alert" hidden></p>
+      <div class="claim-spin__actions"><button class="button button--light" type="button" data-claim-back>&larr; Edit details</button><button class="button button--primary" type="button" data-claim-spin>Spin the wheel</button></div>
+    </div>
+    <div class="claim-done" data-claim-done-step hidden aria-live="polite">
+      <p class="claim-done__label">Your team number</p>
+      <div class="claim-done__number" data-claim-number>#&ndash;</div>
+      <h3 data-claim-done-title>You&rsquo;re in!</h3>
+      <p data-claim-done-text></p>
+      <button class="button button--primary" type="button" data-claim-close>View the couples list</button>
+    </div>
+  </dialog>
   <script defer src="js/tennis-league.js?v=8"></script>
+  <script defer src="js/claim-config.js?v=1"></script>
+  <script defer src="js/claim-spot.js?v=2"></script>
 </body>
 </html>
