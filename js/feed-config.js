@@ -1,15 +1,15 @@
 (function initialiseFeedConfig(root) {
   "use strict";
 
-  const STORAGE_KEY = "playpadel-challenger-series-feed-settings-v2";
+  const STORAGE_KEY = "laeveld-couples-padel-feed-settings-v1";
   const CHANGE_EVENT = "padeuce:feed-config-change";
   const defaults = Object.freeze({
-    court1Url: "https://padeuce.com/club/5zvsITM2pqsDhMVL3/1",
-    court2Url: "https://padeuce.com/club/5zvsITM2pqsDhMVL3/2",
-    court3Url: "https://padeuce.com/club/5zvsITM2pqsDhMVL3/3",
-    court4Url: "https://padeuce.com/club/5zvsITM2pqsDhMVL3/4",
-    scheduleUrl: "https://padeuce.com/club/playpadel-challenger/tournament/challenger-series/results",
-    standingsUrl: "https://padeuce.com/club/playpadel-challenger/tournament/challenger-series/results"
+    court1Url: "https://padeuce.com/club/ajyWoAe_2gX1FPr_2/1",
+    court2Url: "https://padeuce.com/club/ajyWoAe_2gX1FPr_2/2",
+    court3Url: "https://padeuce.com/club/ajyWoAe_2gX1FPr_2/3",
+    court4Url: "https://padeuce.com/club/ajyWoAe_2gX1FPr_2/4",
+    scheduleUrl: "https://padeuce.com/club/ajyWoAe_2gX1FPr_2/tournament/oIJQENT5xZ4pyl8xV/results",
+    standingsUrl: "https://padeuce.com/club/ajyWoAe_2gX1FPr_2/tournament/oIJQENT5xZ4pyl8xV/results"
   });
 
   function storage() {

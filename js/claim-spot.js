@@ -92,6 +92,7 @@
       .filter(c => c.number >= 1 && c.number <= TOTAL);
     renderList();
     renderWheel();
+    window.dispatchEvent(new CustomEvent("couples:claims", { detail: claims }));
   }
 
   async function refreshClaims() {

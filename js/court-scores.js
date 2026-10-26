@@ -10,10 +10,10 @@
   const matchStreams = new Map();
 
   const defaultCourts = {
-    court1Url: { clubId: "5zvsITM2pqsDhMVL3", court: "1" },
-    court2Url: { clubId: "5zvsITM2pqsDhMVL3", court: "2" },
-    court3Url: { clubId: "5zvsITM2pqsDhMVL3", court: "3" },
-    court4Url: { clubId: "5zvsITM2pqsDhMVL3", court: "4" }
+    court1Url: { clubId: "ajyWoAe_2gX1FPr_2", court: "1" },
+    court2Url: { clubId: "ajyWoAe_2gX1FPr_2", court: "2" },
+    court3Url: { clubId: "ajyWoAe_2gX1FPr_2", court: "3" },
+    court4Url: { clubId: "ajyWoAe_2gX1FPr_2", court: "4" }
   };
 
   const createElement = (tag, className, text) => {

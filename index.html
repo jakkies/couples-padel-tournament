@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Playfair+Display:wght@500;600;700;800&amp;family=Roboto:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="assets/images/laeveld-padel-hero.jpg">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/tennis-league.css?v=23">
+  <link rel="stylesheet" href="css/tennis-league.css?v=24">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -34,12 +34,12 @@
         <b class="brand__name">Couples Padel Tournament</b>
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#clubs" hidden>Clubs</a><a href="#couples">Couples</a><a href="#prizes">Prizes</a><a href="#fixtures">Fixtures &amp; Results</a><a href="#standings">Standings</a><a href="#league-info">Event Info</a><a href="#live-scores">Live Scores</a>
+        <a href="#couples">Couples</a><a href="#prizes">Prizes</a><a href="#fixtures">Fixtures &amp; Results</a><a href="#standings">Standings</a><a href="#league-info">Event Info</a><a href="#live-scores">Live Scores</a>
       </nav>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><span></span><span></span><span></span><b>Menu</b></button>
     </div>
     <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden data-mobile-nav>
-      <a href="#clubs" hidden>Clubs</a><a href="#couples">Couples</a><a href="#prizes">Prizes</a><a href="#fixtures">Fixtures &amp; Results</a><a href="#standings">Standings</a><a href="#league-info">Event Info</a><a href="#live-scores">Live Scores</a>
+      <a href="#couples">Couples</a><a href="#prizes">Prizes</a><a href="#fixtures">Fixtures &amp; Results</a><a href="#standings">Standings</a><a href="#league-info">Event Info</a><a href="#live-scores">Live Scores</a>
     </nav>
   </header>
   <main id="main-content">
@@ -95,50 +95,24 @@
         </div>
       </div>
     </section>
-    <section class="club-carousel" id="clubs" aria-labelledby="competing-clubs-title" hidden>
-      <div class="container club-carousel__heading">
-        <div><span class="club-carousel__kicker">Across the peninsula</span><h2 id="competing-clubs-title">Clubs competing in 2026</h2></div>
-        <a class="club-carousel__count" href="https://www.cttennis.co.za/2025/Resources/Booklet%202025-2026.pdf" target="_blank" rel="noopener">40 affiliated clubs <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="club-carousel__viewport" tabindex="0" aria-label="Competing tennis clubs. Scroll horizontally to browse." data-club-carousel>
-        <div class="club-carousel__track" data-club-track></div>
-      </div>
-    </section>
     <section class="section" id="fixtures" aria-labelledby="fixtures-title">
       <div class="container">
         <div class="section-heading">
-          <div><p class="eyebrow"><span></span> Match centre</p><h2 id="fixtures-title">Fixtures <em>&amp;</em> Results</h2><p>The match schedule and results will be published closer to the tournament.</p></div>
+          <div><p class="eyebrow"><span></span> Match centre</p><h2 id="fixtures-title">Fixtures <em>&amp;</em> Results</h2><p>Every match of the draw, with scores as they come in from the courts.</p></div>
+          <div class="feed-meta"><p class="feed-sync" data-tournament-sync data-state="loading"><i></i><span>Connecting to Padeuce&hellip;</span></p><a class="text-link" href="https://padeuce.com/club/ajyWoAe_2gX1FPr_2/tournament/oIJQENT5xZ4pyl8xV/results" data-feed-url="scheduleUrl" target="_blank" rel="noopener">Open on Padeuce <span aria-hidden="true">&#8599;</span></a></div>
         </div>
-        <div class="match-empty" role="status"><img src="assets/images/padel-rackets-icon.png" width="377" height="302" alt=""><h3>Match info not available</h3><p>Fixtures and results for the Couples Padel Tournament will appear here once the draw is confirmed.</p></div>
-        <div hidden>
-        <div class="match-toolbar">
-          <div class="view-switcher" role="tablist" aria-label="Match view"><button type="button" role="tab" aria-selected="true" data-match-view="fixtures">Fixtures <span data-fixture-count>0</span></button><button type="button" role="tab" aria-selected="false" data-match-view="results">Results <span data-result-count>0</span></button></div>
-          <div class="filter-row" aria-label="Match filters">
-            <label><span>League</span><select data-filter="gender"><option value="all">All leagues</option><option value="ladies">Ladies</option><option value="mens">Men’s</option></select></label>
-            <label><span>Format</span><select data-filter="format"><option value="all">Singles &amp; Doubles</option><option value="Singles">Singles</option><option value="Doubles">Doubles</option></select></label>
-            <label class="filter-row__club"><span>Club</span><select data-filter="club"><option value="all">All clubs</option></select></label>
-            <label class="filter-row__division"><span>Division</span><select data-filter="division"><option value="all">All divisions</option></select></label>
-          </div>
-        </div>
-        <div class="matchday-strip" data-matchdays aria-label="Matchday filter"></div>
-        <div class="fixture-grid" data-match-grid aria-live="polite"><article class="loading-card"><span></span><span></span><span></span></article><article class="loading-card"><span></span><span></span><span></span></article><article class="loading-card"><span></span><span></span><span></span></article></div>
-        <div class="load-more-wrap"><button class="button button--dark" type="button" data-load-more hidden>Show more fixtures</button></div>
-        </div>
+        <div class="fixture-feed" data-schedule-feed aria-live="polite"><div class="match-empty"><img src="assets/images/padel-rackets-icon.png" width="377" height="302" alt=""><h3>Loading matches&hellip;</h3><p>Fetching the latest draw from Padeuce.</p></div></div>
       </div>
     </section>
     <section class="section section--standings" id="standings" aria-labelledby="standings-title">
       <div class="container">
         <div class="section-heading section-heading--light">
-          <div><p class="eyebrow eyebrow--light"><span></span> Live tables</p><h2 id="standings-title">Tournament <em>Standings</em></h2><p>Points determine rank, with sets difference shown as the first tie-break.</p></div>
-          <div class="standing-updated"><i></i><span>Automatic updates from submitted results</span></div>
+          <div><p class="eyebrow eyebrow--light"><span></span> Live tables</p><h2 id="standings-title">Tournament <em>Standings</em></h2><p>Wins, losses and sets for every couple, updated from Padeuce as results are scored.</p></div>
+          <p class="feed-sync feed-sync--light" data-tournament-sync data-state="loading"><i></i><span>Connecting to Padeuce&hellip;</span></p>
         </div>
         <div class="standings-layout">
-          <div class="match-empty match-empty--standings" role="status"><img src="assets/images/padel-rackets-icon.png" width="377" height="302" alt=""><h3>Match info not available</h3><p>Standings for the Couples Padel Tournament will appear here once matches are under way.</p></div>
-          <div hidden>
-          <div class="standings-controls"><div class="gender-switcher" role="tablist" aria-label="Standings league"><button type="button" role="tab" aria-selected="true" data-standing-gender="ladies">Ladies</button><button type="button" role="tab" aria-selected="false" data-standing-gender="mens">Men’s</button></div><label><span>Select division</span><select data-standing-division><option>Loading divisions…</option></select></label></div>
-          <article class="standings-card"><header><div><p class="eyebrow"><span></span> Current table</p><h3 data-standing-title>League standings</h3></div><b data-standing-team-count>— teams</b></header><div class="standings-table" data-standings-table><div class="standings-row standings-row--head"><span>Pos</span><span>Team</span><span>Pld</span><span>W</span><span>D</span><span>L</span><span>SD</span><span>Pts</span></div><div class="standings-empty">Loading live standings…</div></div></article>
-          </div>
-          <aside class="points-card"><p class="eyebrow eyebrow--light"><span></span> Table guide</p><h3>Follow every point</h3><p>Standings refresh automatically as results are entered during the day.</p><dl><div><dt>Pld</dt><dd>Fixtures played</dd></div><div><dt>SD</dt><dd>Sets difference</dd></div><div><dt>Pts</dt><dd>League points</dd></div></dl><a href="#league-info">Event info <span aria-hidden="true">→</span></a></aside>
+          <div data-standings-feed aria-live="polite"><div class="match-empty match-empty--standings"><img src="assets/images/padel-rackets-icon.png" width="377" height="302" alt=""><h3>Loading standings&hellip;</h3><p>Fetching the latest table from Padeuce.</p></div></div>
+          <aside class="points-card"><p class="eyebrow eyebrow--light"><span></span> Table guide</p><h3>Follow every point</h3><p>Knock-out format: lose a match and your couple is out.</p><dl><div><dt>P</dt><dd>Matches played</dd></div><div><dt>W / L</dt><dd>Wins and losses</dd></div><div><dt>Sets</dt><dd>Sets won&ndash;lost</dd></div></dl><a href="https://padeuce.com/club/ajyWoAe_2gX1FPr_2/tournament/oIJQENT5xZ4pyl8xV/results" data-feed-url="standingsUrl" target="_blank" rel="noopener">Full results on Padeuce <span aria-hidden="true">&#8599;</span></a></aside>
         </div>
       </div>
     </section>
@@ -148,13 +122,13 @@
     <section class="section live-scores" id="live-scores" aria-labelledby="live-scores-title">
       <div class="container">
         <div class="section-heading">
-          <div><p class="eyebrow"><span></span> Live match centre</p><h2 id="live-scores-title">Live <em>Scores</em></h2><p>Follow the courts at Ruimsig Country Club. Scores will appear automatically when a live feed is available.</p></div>
+          <div><p class="eyebrow"><span></span> Live match centre</p><h2 id="live-scores-title">Live <em>Scores</em></h2><p>Point-by-point scores from all four courts at Ruimsig Country Club. Each court updates automatically while a match is being played.</p></div>
         </div>
-        <div class="live-courts" data-live-courts aria-live="polite">
-          <article class="live-court" data-live-court="1"><header><span>Live court</span><b>Court 1</b><i>Waiting</i></header><div class="live-court__placeholder"><span aria-hidden="true">1</span><h3>Waiting for a live match</h3><p>Select a club or check back once play begins.</p></div></article>
-          <article class="live-court" data-live-court="2"><header><span>Live court</span><b>Court 2</b><i>Waiting</i></header><div class="live-court__placeholder"><span aria-hidden="true">2</span><h3>Waiting for a live match</h3><p>Select a club or check back once play begins.</p></div></article>
-          <article class="live-court" data-live-court="3"><header><span>Live court</span><b>Court 3</b><i>Waiting</i></header><div class="live-court__placeholder"><span aria-hidden="true">3</span><h3>Waiting for a live match</h3><p>Select a club or check back once play begins.</p></div></article>
-          <article class="live-court" data-live-court="4"><header><span>Live court</span><b>Court 4</b><i>Waiting</i></header><div class="live-court__placeholder"><span aria-hidden="true">4</span><h3>Waiting for a live match</h3><p>Select a club or check back once play begins.</p></div></article>
+        <div class="live-courts">
+          <article class="live-court"><header><span>Ruimsig Country Club</span><b>Court 1</b><a href="https://padeuce.com/club/ajyWoAe_2gX1FPr_2/1" data-feed-url="court1Url" target="_blank" rel="noopener">Open feed <span aria-hidden="true">&#8599;</span></a></header><div class="court-score" data-court-score="1" data-court-name="Court 1" aria-live="polite" aria-busy="true"><p class="court-score__empty">Connecting to Court 1&hellip;</p></div></article>
+          <article class="live-court"><header><span>Ruimsig Country Club</span><b>Court 2</b><a href="https://padeuce.com/club/ajyWoAe_2gX1FPr_2/2" data-feed-url="court2Url" target="_blank" rel="noopener">Open feed <span aria-hidden="true">&#8599;</span></a></header><div class="court-score" data-court-score="2" data-court-name="Court 2" aria-live="polite" aria-busy="true"><p class="court-score__empty">Connecting to Court 2&hellip;</p></div></article>
+          <article class="live-court"><header><span>Ruimsig Country Club</span><b>Court 3</b><a href="https://padeuce.com/club/ajyWoAe_2gX1FPr_2/3" data-feed-url="court3Url" target="_blank" rel="noopener">Open feed <span aria-hidden="true">&#8599;</span></a></header><div class="court-score" data-court-score="3" data-court-name="Court 3" aria-live="polite" aria-busy="true"><p class="court-score__empty">Connecting to Court 3&hellip;</p></div></article>
+          <article class="live-court"><header><span>Ruimsig Country Club</span><b>Court 4</b><a href="https://padeuce.com/club/ajyWoAe_2gX1FPr_2/4" data-feed-url="court4Url" target="_blank" rel="noopener">Open feed <span aria-hidden="true">&#8599;</span></a></header><div class="court-score" data-court-score="4" data-court-name="Court 4" aria-live="polite" aria-busy="true"><p class="court-score__empty">Connecting to Court 4&hellip;</p></div></article>
         </div>
       </div>
     </section>
@@ -199,8 +173,11 @@
       <button class="button button--primary" type="button" data-claim-close>View the couples list</button>
     </div>
   </dialog>
-  <script defer src="js/tennis-league.js?v=8"></script>
+  <script defer src="js/site.js?v=1"></script>
+  <script defer src="js/feed-config.js?v=2"></script>
+  <script defer src="js/court-scores.js?v=2"></script>
+  <script defer src="js/padel-tournament.js?v=1"></script>
   <script defer src="js/claim-config.js?v=1"></script>
-  <script defer src="js/claim-spot.js?v=2"></script>
+  <script defer src="js/claim-spot.js?v=3"></script>
 </body>
 </html>
