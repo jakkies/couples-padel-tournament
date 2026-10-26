@@ -131,3 +131,11 @@ html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--pape
 .prize-card__details div{display:flex;gap:10px;padding:10px 14px;border:1px dashed rgba(154,132,52,.5);border-radius:10px;background:#faf7ee;font-size:14px}
 .prize-card__details dt{color:var(--forest);font-weight:700}
 .prize-card__details dd{margin:0;color:#7a6826;font-style:italic}
+.league-info .timeline{grid-template-columns:repeat(2,1fr)}
+.timeline article:nth-child(4):before{background:var(--forest)}
+.rules-list{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:12px}
+.rules-list li{display:flex;align-items:center;gap:14px;color:var(--forest);font:600 15px/1.35 "Playfair Display",Georgia,serif;text-transform:uppercase;letter-spacing:.06em}
+.rules-list i{flex:0 0 34px;height:34px;display:grid;place-items:center;border-radius:50%;color:var(--forest);background:#dfe6a8;font:700 17px/1 "Playfair Display",Georgia,serif;font-style:normal;letter-spacing:0}
+@media(max-width:760px){.league-info .timeline{grid-template-columns:1fr}}
+.prize-card__place--confirmed{border-style:solid;border-color:var(--gold);color:#fff;background:var(--gold);font-family:"Playfair Display",Georgia,serif;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.timeline p.timeline__prize{margin-top:14px;padding:10px 14px;border-radius:10px;color:var(--forest);background:#eef0d2;font:600 14px/1.4 "Playfair Display",Georgia,serif}
